@@ -44,6 +44,7 @@
     <p>para colocar imagem no html, ultilize <strong>IMG</strong></p>
     <p>para colocar uma imagem do computador baixado utilize o "./"</p>
     <p>Para alterar a resoluçao da imagem utilize width e height </p>
+    <p>Utilize a proprieda do "alt" para dar uma dica da imagem</p>
 
     <img src="./img/download.jfif" alt="">
     
@@ -127,22 +128,28 @@
 <hr>
 <h2>Formulario</h2>
 <p>Parar criar um formulario use o "form"<br>
-Para declarar o formulario use o "input" <br>
+Para abrir uma caixainha onde o usuario for escrever utilize o "input" <br>
 Para crirar uma pergunta use "label" <br>
 Utilize o "placeholder" para dar um exemplo do que escrever <br>
 Para o programa entender em qual cada um pertence qual utilize o "id" no "input" para indentificar oque esta escrito no "label" <br>
 Para forçar o usuario preencher algo utilize o "required" <br>
 Para a bolinha ser escolhida somente uma utilize o "name=linguagem" <br>
-Utilize o "textarea" para abrir uma caixinha para escrever algo no seu formulario</p>
+Utilize o "textarea" para abrir uma caixinha para escrever algo no seu formulario <br>
+utilizer "value" para trocar o nome do "enviar/submit" <br>
+use o "hidden" para esconder algo q o usuario foi passar <br>
+Utilize "disabled" para q a caixa fique inativa <br>
+Utilize "readonLy" para q o usuario nao possa escrever
+O "action" server para onde vc quer mandar as informaçoões e "method" como vc quer mandar.
+</p>
 <form>
     <label for="">Nome:</label> <br>
-    <input type="text" id="Nome" required> <br>
+    <input type="hidden" id="Nome" placeholder="DigiteseuNOME" required> <br>
     <label for="">Sobrenome:</label> <br>
-    <input type="text" id="Sobrenome" required> <br>
+    <input type="text" id="Sobrenome" readonly placeholder="DigiteseuSOBRENOME" required> <br>
     <label for="">Email:</label> <br>
-    <input type="email" id="Email" placeholder="Digiteseu@email.com" required> <br>
+    <input type="email" id="Email" placeholder="Digiteseu@EMAIL.com" required> <br>
 <textarea name="" id="" cols="30" rows="10"></textarea> <br>
-    <input type="submit"> 
+    <input type="submit" value="Cadastrar" > 
 </form>
 
 <h3>Escolha sua linguagem favorita</h3>
